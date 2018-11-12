@@ -9,10 +9,9 @@ void Calculs(void)
 void Traitement(void)
 {
 	// read the value from the sensor:
-  sensorValue = analogRead(sensorPin);
+  valeurCapteur = analogRead(pinDuCapteur);
   // turn the ledPin on
-  digitalWrite(ledPin, HIGH);
-  // stop the program for <sensorValue> milliseconds:
+
   delay(sensorValue);
   // turn the ledPin off:
   digitalWrite(ledPin, LOW);
