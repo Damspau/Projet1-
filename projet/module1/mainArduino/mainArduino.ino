@@ -1,11 +1,6 @@
+#include "cardio.h"
 
-int pinDuCapteur = A0;    // select the input pin for the potentiometer
-
-int valeurCapteur = 0;
-
-int pulse = 0;
-
-int millistart;
+int pinDuCapteur=A0;
 
 void setup() {
 pinMode(pinDuCapteur, INPUT);
@@ -16,27 +11,26 @@ Serial.begin(9600);
 
 void loop() {
 millistart= millis();
-while (millis()<millistart+10000)
+int temps=millistart+1000;
+
+while (millis()<temps)
 {
-  valeurCapteur = analogRead(pinDuCapteur);
-  delay(850);
-    if (valeurCapteur ==0)
-    {
-      pulse++;  
-
-  
+ traitement(pinDuCapteur, &pulse);
 
 
-    }
    
 }      
+
+
+calculDuPoul(pulse, temps);
 
 if (pulse>1){
 Serial.print(pulse);
 pulse=0;
 }
 else{
-Serial.print("pas de pulse"); 
+Serial.print("pas de pulse\n");
+pulse=0; 
 }
 
 }
