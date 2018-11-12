@@ -7,4 +7,6 @@ int sensorValue = 0;  // variable to store the value coming from the sensor
 
 void Fonction(void);
 
+void
+
 #endif
