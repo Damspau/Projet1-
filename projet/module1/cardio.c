@@ -11,10 +11,11 @@ void Traitement(void)
 	// read the value from the sensor:
   valeurCapteur = analogRead(pinDuCapteur);
   // turn the ledPin on
+    if (valeurCapteur ==0)
+    {
+        printf("ok y'as rien");
+    }
+    else
+        printf("ok y'as quelque chose");
 
-  delay(sensorValue);
-  // turn the ledPin off:
-  digitalWrite(ledPin, LOW);
-  // stop the program for for <sensorValue> milliseconds:
-  delay(sensorValue);
 }
