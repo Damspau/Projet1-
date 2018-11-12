@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "cardio.h"
 
-void Calculs(void)
+void calculDuPoul(void)
 {
 	printf("Coucou !\n");
 }
