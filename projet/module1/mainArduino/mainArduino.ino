@@ -16,7 +16,7 @@ int temps=millistart+1000;
 while (millis()<temps)
 {
  pulse=traitement(pinDuCapteur, pulse);
- millisEnd = millis();
+ 
 
    
 }      
@@ -27,6 +27,7 @@ calculDuPoul(pulse, temps);
 if (pulse>1){
 Serial.print(pulse);
 Serial.print(65, DEC);
+millisEnd = millis();
 Serial.print(millisEnd);
 pulse=0;
 }
