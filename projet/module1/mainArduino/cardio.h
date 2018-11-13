@@ -12,6 +12,8 @@ int valeurSeuil=550;
 
 int millistart;
 
+int millisEnd;
+
 
 int traitement(int pinDuCapteur, int pulse);
 
