@@ -1,3 +1,4 @@
+#include "param.h"
 void setup() {
  pinMode (8, OUTPUT);
  pinMode (9, OUTPUT);
@@ -8,5 +9,5 @@ void setup() {
 }
 
 void loop() {
-
+clignoChenille();
 }
