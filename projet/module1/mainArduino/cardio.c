@@ -16,9 +16,7 @@ int traitement(int pinDuCapteur, int pulse)
   float voltage=analogRead(pinDuCapteur) * (5.0 / 1023.0);
   
   while (voltage!=2.10){
-  int valeurCapteur = 0;
-  valeurCapteur = analogRead(pinDuCapteur);
-  int valeurSeuil=0;
+  
     if (voltage == 2.10)
     {
       
