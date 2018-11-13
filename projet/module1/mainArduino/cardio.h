@@ -13,7 +13,7 @@ int valeurSeuil=550;
 int millistart;
 
 
-int traitement(int pinDuCapteur, int *pulse);
+int traitement(int pinDuCapteur, int pulse);
 
 long int calculDuPoul(long int pulse,int temps);
 

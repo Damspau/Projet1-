@@ -15,7 +15,7 @@ int temps=millistart+1000;
 
 while (millis()<temps)
 {
- traitement(pinDuCapteur, &pulse);
+ pulse=traitement(pinDuCapteur, pulse);
 
 
    

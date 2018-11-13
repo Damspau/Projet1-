@@ -10,15 +10,15 @@ long int calculDuPoul(long int pulse, int temps)
 }
 
 
-int traitement(int pinDuCapteur, int *pulse)
+int traitement(int pinDuCapteur, int pulse)
 {
   int valeurCapteur = 0;
   valeurCapteur = analogRead(pinDuCapteur);
-  int valeurSeuil=550;
+  int valeurSeuil=300;
     if (valeurCapteur <= valeurSeuil)
     {
       pulse++; 
 
   }
-return *pulse;
+return pulse;
 }
