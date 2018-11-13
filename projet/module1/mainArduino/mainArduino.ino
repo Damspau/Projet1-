@@ -11,8 +11,8 @@ Serial.begin(9600);
 
 void loop() {
 millistart= millis();
-int millistart2= millistart;
-int temps=millistart+1000;
+millistart2= millistart;
+temps=millistart+1000;
 
 while (millistart2<temps)
 {
@@ -23,11 +23,11 @@ while (millistart2<temps)
 }      
 
 
-calculDuPoul(pulse, temps);
+resultat=calculDuPoul(pulse, millistart2);
 
 if (pulse>1){
 
-Serial.print(pulse);
+Serial.print(resultat);
 Serial.print("\n");
 Serial.print(65, DEC);
 millisEnd = millis();

@@ -5,8 +5,8 @@
 long int calculDuPoul(long int pulse, int temps)
 {
   int resultat=0;
-  /*diviser par 60000 pour pulsation par min*/
-  resultat= pulse/(temps/60000);
+  /*multiplier par 60000 pour pulsation par min*/
+  resultat= (pulse/(temps)*60000);
   return resultat;
 }
 

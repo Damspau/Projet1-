@@ -4,7 +4,11 @@
 #include "cardio.c"
 
 
+int millistart2;
 
+float resultat;
+
+int temps;
 
 int pulse;
 
