@@ -1,4 +1,3 @@
-//Cligno6.ino
 int nLeds = 9 ;
 int ledPins[] = {5,6,7,8,9,10,11,12,13} ;
 int i ;
