@@ -4,6 +4,7 @@
 #include "param.c"
 
 void clignoChenille(void);
+void simultaneCligno (void);
 
 
 

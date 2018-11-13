@@ -6,9 +6,9 @@
 
 
 
-int pulse = 0;
+int pulse;
 
-int valeurSeuil=550;
+int valeurSeuil;
 
 int millistart;
 
