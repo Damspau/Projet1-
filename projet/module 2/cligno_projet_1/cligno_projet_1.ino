@@ -1,13 +1,12 @@
 #include "param.h"
 void setup() {
- pinMode (8, OUTPUT);
- pinMode (9, OUTPUT);
- pinMode (10, OUTPUT);
- pinMode (11, OUTPUT);
- pinMode (12, OUTPUT);
- pinMode (13, OUTPUT);
-}
+ int i;
+ for (i=5;i<=13;i++)
+ {
+ pinMode (i, OUTPUT);
 
+}
+}
 void loop() {
 clignoChenille();
 }
