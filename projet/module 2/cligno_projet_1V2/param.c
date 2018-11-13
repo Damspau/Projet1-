@@ -18,3 +18,19 @@ void clignoChenille(void)
 
 }
 } 
+void simultaneCligno (void)
+ {
+  int i;
+ 
+    for (i=5;i<=13;i++)
+  {
+    digitalWrite (i,LOW ); // allume
+  
+  }
+  delay(700);
+  for (i=13;i>=5;i--)
+  {
+    digitalWrite (i,HIGH); // eteint
+ }
+ delay (300);
+ }
