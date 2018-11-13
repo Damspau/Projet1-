@@ -13,12 +13,12 @@ void loop()
 	for (i=0; i< nLeds ; i++)
 	{
 		digitalWrite (ledPins[i],LOW ); // allume
-		delay (1000) ;
+		delay (100) ;
 	}
 	for (i=nLeds-1; i >= 0 ; i--)
 	{
 		digitalWrite (ledPins[i],HIGH); // eteint
-		delay (1000) ;
+		delay (100) ;
 	}
-	delay (2000) ;
+	delay (300) ;
 }
