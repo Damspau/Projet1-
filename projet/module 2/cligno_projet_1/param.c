@@ -1,6 +1,10 @@
+#include <Arduino.h>
 
-void clignoChenille(void)
-{
+
+ 
+ void chenilleCligno (void)
+ {
+  
   digitalWrite (9, HIGH);
   delay(100);
   digitalWrite (9, LOW);
@@ -16,3 +20,4 @@ void clignoChenille(void)
   digitalWrite (13, HIGH);
   delay(100);
   digitalWrite (13, LOW);
+ }
