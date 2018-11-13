@@ -1,6 +1,6 @@
 #include "cardio.h"
 
-int pinDuCapteur=A0;
+
 
 void setup() {
 pinMode(pinDuCapteur, INPUT);

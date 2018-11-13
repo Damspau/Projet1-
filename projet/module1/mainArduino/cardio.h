@@ -2,9 +2,11 @@
 #define CARDIO_H_INCLUDED
 
 #include "cardio.c"
-
+#include <Arduino.h>
 
 int millistart2;
+
+int pinDuCapteur=A0;
 
 float resultat;
 
