@@ -89,7 +89,7 @@ void unSurAutreChenille (int lequel)
  {
   digitalWrite (i, HIGH);
   delay(delayrandom);
-  digitalWrite (i, LOW)
+  digitalWrite (i, LOW);
 
 }
 }  
