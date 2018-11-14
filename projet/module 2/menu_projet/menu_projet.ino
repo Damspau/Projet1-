@@ -12,7 +12,8 @@ void setup() {
 void loop() {
  int choix;
  choix=0;
- scanf("%d", &choix);
+ printf ("quel cligno");
+ sscanf("%d", &choix);
  if (choix==1)
  {
    void clignoChenille(void);
