@@ -31,11 +31,11 @@ resultat=pulse*6;
 
 
 
-Serial.print(resultat);
-Serial.print(";");
+Serial.println(resultat);
+
 millisEnd = millis();
 millisEnd=millisEnd;
-Serial.print(millisEnd);
+Serial.println(millisEnd);
 
 
 
