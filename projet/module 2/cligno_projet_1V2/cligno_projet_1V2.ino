@@ -14,6 +14,7 @@ void loop() {
 Serial.print("Pour le mode chenille c'est 1 \n 2 pour le mode simultané \n 3 pour le 1 sur quelque chose \n 4 pour le mode progressif");
 int lequel=3;
 unSurAutreChenille (lequel);
+
 /* if (choix==1)
  {
    void clignoChenille(void);
