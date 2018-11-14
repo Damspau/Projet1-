@@ -10,39 +10,38 @@ Serial.begin(9600);
 }
 
 void loop() {
+pulse=0;
 unsigned long time;
 millistart2= millistart;
 temps=millistart+1000;
 time= millis();
 
 temps=millis()+1000;
-Serial.print(temps);
-while (millis()<temps)
+millistart2= millis();
+while (millis()<millistart2+1000)
 {
- Serial.print("blyat");
- pulse=traitement(pinDuCapteur, pulse)+pulse;
  
+ pulse=traitement()+pulse;
+
   
- millistart2= millis(); 
-  
+ 
+ delay(10);
 }
-      
+millisEnd=millis();      
 
 
-resultat=calculDuPoul(pulse, millistart2);
+resultat=calculDuPoul(pulse, millisEnd);
 
-if (pulse>1){
+
 
 Serial.print(resultat);
 Serial.print("\n");
-Serial.print(65, DEC);
+
 millisEnd = millis();
 Serial.print(millisEnd);
-pulse=0;
-}
-else{
-Serial.print("pas de pulse\n");
-pulse=0; 
-}
+
+
+
+
 
 }

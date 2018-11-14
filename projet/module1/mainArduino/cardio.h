@@ -21,7 +21,7 @@ unsigned long millistart;
 unsigned long millisEnd;
 
 
-int traitement(int pinDuCapteur, int pulse);
+int traitement(void);
 
 long int calculDuPoul(long int pulse,int temps);
 
