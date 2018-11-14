@@ -13,6 +13,8 @@ long int calculDuPoul(long int pulse, int temps)
 
 int traitement(int pinDuCapteur, int pulse)
 {
+  Serial.begin(9600);
+  Serial.print("resultat");
   float voltage=analogRead(pinDuCapteur) * (5.0 / 1023.0);
   
   while (voltage!=2.10){

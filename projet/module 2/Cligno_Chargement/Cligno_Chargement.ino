@@ -1,24 +1,26 @@
-int nLeds = 9 ;
-int ledPins[] = {5,6,7,8,9,10,11,12,13} ;
-int i ;
+
+
+
 void setup() 
 {                
-	for (i=0; i< nLeds; i++)
+	int i=0 ;
+	for (i=5;i<=13;i++)
 	{
-		pinMode (ledPins[i], OUTPUT) ;
+		pinMode (i, OUTPUT) ;
 	}
 }
 void loop() 
 {
-	for (i=0; i< nLeds ; i++)
+	int i =0;
+	for (i=5;i<=13;i++)
 	{
-		digitalWrite (ledPins[i],LOW ); // allume
+		digitalWrite (i,HIGH ); // allume
 		delay (1000) ;
 	}
-	for (i=nLeds-1; i >= 0 ; i--)
+	for (i=13; i >= 5 ; i--)
 	{
-		digitalWrite (ledPins[i],HIGH); // eteint
+		digitalWrite (i,LOW); // eteint
 		delay (1000) ;
 	}
-	delay (2000) ;
+	 
 }

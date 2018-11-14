@@ -18,9 +18,11 @@ while (millistart2<temps)
 {
  pulse=traitement(pinDuCapteur, pulse)+pulse;
  
-  delay(10);
+  
  millistart2= millis(); 
-}      
+  
+}
+      
 
 
 resultat=calculDuPoul(pulse, millistart2);
