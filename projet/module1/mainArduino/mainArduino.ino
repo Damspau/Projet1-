@@ -10,12 +10,16 @@ Serial.begin(9600);
 }
 
 void loop() {
-millistart= millis();
+unsigned long time;
 millistart2= millistart;
 temps=millistart+1000;
+time= millis();
 
-while (millistart2<temps)
+temps=millis()+1000;
+Serial.print(temps);
+while (millis()<temps)
 {
+ Serial.print("blyat");
  pulse=traitement(pinDuCapteur, pulse)+pulse;
  
   

@@ -4,21 +4,21 @@
 #include "cardio.c"
 #include <Arduino.h>
 
-int millistart2;
+unsigned long millistart2;
 
 int pinDuCapteur=A0;
 
 float resultat;
 
-int temps;
+unsigned long temps;
 
 int pulse;
 
 int valeurSeuil;
 
-int millistart;
+unsigned long millistart;
 
-int millisEnd;
+unsigned long millisEnd;
 
 
 int traitement(int pinDuCapteur, int pulse);
