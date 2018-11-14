@@ -23,6 +23,6 @@ unsigned long millisEnd;
 
 int traitement(void);
 
-long int calculDuPoul(long int pulse,int temps);
+
 
 #endif

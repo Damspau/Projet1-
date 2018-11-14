@@ -3,15 +3,6 @@
 #include <Arduino.h>
 
 
-long int calculDuPoul(long int pulse, unsigned long temps)
-{
-  
-  float resultat=0;
-  /*diviser par 60000 pour pulsation par min*/
-  
-  resultat= pulse*20;
-  return resultat;
-}
 
 
 int traitement(void)

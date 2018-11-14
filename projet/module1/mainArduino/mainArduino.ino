@@ -30,17 +30,17 @@ while (millis()<millistart2+3000)
 millisEnd=millis();      
 
 
-resultat=calculDuPoul(pulse, millisEnd);
+resultat=pulse*20;
 
 
 Serial.print("Voici le resultat\n");
 Serial.print(resultat);
-Serial.print("\n");
+Serial.print(" battements minutes\n");
 Serial.print("Lance depuis\n");
 millisEnd = millis();
-
+millisEnd=millisEnd/1000.0;
 Serial.print(millisEnd);
-Serial.print("\n");
+Serial.print(" s\n");
 
 
 
