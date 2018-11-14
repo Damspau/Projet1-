@@ -5,9 +5,11 @@
 
 long int calculDuPoul(long int pulse, unsigned long temps)
 {
-  int resultat=0;
+  
+  float resultat=0;
   /*diviser par 60000 pour pulsation par min*/
-  resultat= (pulse/(temps)/60000);
+  
+  resultat= pulse*20;
   return resultat;
 }
 
