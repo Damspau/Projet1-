@@ -22,14 +22,15 @@ void clignoChenille(void)
  /*declaration des variables*/
  int i;
  int delayrandom;
+ int tab [9]={7,6,5,9,11,13,12,10,8};
  /*generation aleatoire de valeurs entre 600 et 900*/
  delayrandom = (rand()%(900-600+1))+600;
  /*implementation d'une boucle for pour gerer l'allumage successif des LEDs*/
-  for (i=5;i<=13;i++)
+  for (i=0;i<9;i++)
  {
-  digitalWrite (i, HIGH);
+  digitalWrite (tab[i], HIGH);
   delay(delayrandom);
-  digitalWrite (i, LOW);
+  digitalWrite (tab[i], LOW);
 
 }
 } 
@@ -38,17 +39,18 @@ void simultaneCligno (void)
  {
   /*declaration des variables*/
   int i;
+  int tab [9]={7,6,5,9,11,13,12,10,8};
  /*implementation d'une boucle for qui gere l'allumage des LEDs en simultane*/
-    for (i=5;i<=13;i++)
+    for (i=0;i<9;i++)
   {
-    digitalWrite (i,LOW ); // allume
+    digitalWrite (tab[i],LOW ); // allume
   
   }
   delay(700);
    /*implementation d'une boucle for qui gere la mise hors tension des LEDs en simultane*/
-  for (i=13;i>=5;i--)
+  for (i=9;i>0;i--)
   {
-    digitalWrite (i,HIGH); // eteint
+    digitalWrite (tab[i],HIGH); // eteint
  }
  delay (300);
  }
@@ -57,16 +59,17 @@ void simultaneCligno (void)
  {
 /*declaration des variables*/
   int i =0;
+  int tab [9]={7,6,5,9,11,13,12,10,8};
   /*implementation d'une boucle for qui gere l'allumage des LEDs de maniere progressive*/
-  for (i=5;i<=13;i++)
+  for (i=0;i<9;i++)
   {
-    digitalWrite (i,HIGH ); // allume
+    digitalWrite (tab[i],HIGH ); // allume
     delay (1000) ;
   }
   /*implementation d'une boucle for qui gere la mise hors tension des LEDs de maniere progressive*/
-  for (i=13; i >= 5 ; i--)
+  for (i=9; i>0 ; i--)
   {
-    digitalWrite (i,LOW); // eteint
+    digitalWrite (tab[i],LOW); // eteint
     delay (1000) ;
   }
  }
@@ -75,17 +78,18 @@ void simultaneCligno (void)
 {
  /*declaration des variables*/
   int i;
+  int tab [9]={7,6,5,9,11,13,12,10,8};
   /*implementation d'une boucle for qui gere l'allumage des LEDs de maniere progressive*/
-    for (i=5;i<=13;i=i+lequel)
+    for (i=0;i<0;i=i+lequel)
   {
-    digitalWrite (i,LOW ); // allume
+    digitalWrite (tab[i],LOW ); // allume
   
   }
   delay(700);
    /*implementation d'une boucle for qui gere la mise hors tension des LEDs de maniere progressive*/
-  for (i>=13;i>=5;i=i-lequel)
+  for (i=9;i>0;i=i-lequel)
   {
-    digitalWrite (i,HIGH); // eteint
+    digitalWrite (tab[i],HIGH); // eteint
  }
  delay (300);
  }
@@ -98,14 +102,15 @@ void unSurAutreChenille (int lequel)
  /*declaration des variables*/
  int i;
  int delayrandom;
+ int tab [9]={7,6,5,9,11,13,12,10,8};
  /*generation de valeurs entre 600 et 900*/
  delayrandom = (rand()%(900-600+1))+600;
  /*implementation d'une boucle for pour gerer l'allumage successif des LEDs*/
-  for (i=5;i<=13;i=i+lequel)
+  for (i=0;i<9;i=i+lequel)
  {
-  digitalWrite (i, HIGH);
+  digitalWrite (tab[i], HIGH);
   delay(delayrandom);
-  digitalWrite (i, LOW);
+  digitalWrite (tab[i], LOW);
 
 }
 }  
