@@ -1,17 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#define TAILLE_MAX 1000
-
-
-
-int main(int argc, char *argv[])
-
+void affichageDucontenuEtAssignement (void)
 {
-    typedef struct Valeurs{
-    float coeur;
-    float temps;
-}   Valeurs;
+
+
+
 
     FILE* fichier = NULL;
     float tableauValeurs[TAILLE_MAX];
@@ -42,7 +33,7 @@ int main(int argc, char *argv[])
 
         fclose(fichier);
 
-    }
+ }   }
 /* On la vide et on la met dans les valeurs*/
   for (i=10;i>=0;i=i-2)
   {
@@ -53,7 +44,3 @@ int main(int argc, char *argv[])
     tableauAtrie[i]=valeur;
     }
 /*Maintenant notre tableau a trie est pret.*/
-
-    return 0;
-
-}
