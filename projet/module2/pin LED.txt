@@ -1,0 +1,10 @@
+LED 1/pin 7
+LED 2/pin 6
+LED 3/pin 5
+LED 4/pin 9
+LED 5/pin 11
+LED 6/pin 13
+LED 7/pin 12
+LED 8/pin 10
+LED 9/pin 8
+
