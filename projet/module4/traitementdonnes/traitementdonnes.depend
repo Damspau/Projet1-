@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1542308529 source:c:\users\travail\desktop\projet\github\projet1\projet\module4\traitementdonnes\main.c
+	<stdio.h>
+	<stdlib.h>
+	"donees.c"
+
+1542309264 c:\users\travail\desktop\projet\github\projet1\projet\module4\traitementdonnes\donees.c
+	<stdio.h>
+	<stdlib.h>
+	"donnes.h"
+
+1542307225 c:\users\travail\desktop\projet\github\projet1\projet\module4\traitementdonnes\donnes.h
+

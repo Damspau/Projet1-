@@ -1,18 +1,18 @@
-void affichageDucontenuEtAssignement (void)
+#include <stdio.h>
+#include <stdlib.h>
+#include "donnes.h"
+Valeurs *readDonne(void)
 {
-
-
-
-
     FILE* fichier = NULL;
     float tableauValeurs[TAILLE_MAX];
-    Valeurs tableauAtrie[TAILLE_MAX];
     Valeurs valeur;
-    char chaine[TAILLE_MAX] = "";
+    valeur.coeur=0;
+    valeur.temps=0;
+
 
     int i =0;
     int o=0;
-
+    int u=0;
     fichier = fopen("Battements.csv", "r");
 
 
@@ -21,26 +21,40 @@ void affichageDucontenuEtAssignement (void)
 
     {
 /* On remplie notre pile*/
-        while (fscanf(fichier,"%f",&tableauValeurs[i])> 0) // On lit le fichier tant qu'on ne reçoit pas d'erreur (NULL)
+        while (fscanf(fichier,"%f",&tableauValeurs[u])> 0) // On lit le fichier tant qu'on ne reçoit pas d'erreur (NULL)
 
         {
+            if (o==0)
+            {
+                valeur.coeur=tableauValeurs[u];
 
-            printf("%f\n", tableauValeurs[i]); // On affiche la chaîne qu'on vient de lire
-            i++;
+                o=o+2;
+                u++;
+
         }
+            else if (o==2)
+            {
+               valeur.temps=tableauValeurs[u];
+
+                o=0;
+                tableauAtrie[i]=valeur;
+                i++;
+                u++;
+
+            }
+
+            }
+
+
 
 
 
         fclose(fichier);
 
+
+    return &tableauAtrie;
  }   }
 /* On la vide et on la met dans les valeurs*/
-  for (i=10;i>=0;i=i-2)
-  {
 
 
-    valeur.temps=tableauValeurs[i];
-    valeur.coeur=tableauValeurs[i-1];
-    tableauAtrie[i]=valeur;
-    }
 /*Maintenant notre tableau a trie est pret.*/
