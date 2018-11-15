@@ -1,8 +1,10 @@
+/*inclusion des bibliotheques necessaires au programme*/
 #include <time.h>
 #include <Arduino.h>
 #include <stdio.h>
 #include <stdlib.h>
 
+/*definition des fonctions*/
 void clignoChenille(void)
 {
  srand (time (NULL));
