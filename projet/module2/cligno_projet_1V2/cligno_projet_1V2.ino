@@ -2,10 +2,11 @@
 void setup() {
  /*declaration de la variable du compteur*/
  int i;
+ int tab [9]={7,6,5,9,11,13,12,10,8};
  /*boucle for qui sert de compteur*/
- for (i=5;i<=13;i++)
+ for (i=0;i<9;i++)
  {
- pinMode (i, OUTPUT);
+ pinMode (tab[i], OUTPUT);
 
 }
 }
