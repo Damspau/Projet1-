@@ -1,39 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <fonctions.h>
+
+#define TAILLE_MAX 1000
+
+typedef struct donnes{
+    char rythme;
+    char temps;
+} donnes;
+
 int main(int argc, char *argv[])
+
 {
-
-    char ligne[81];
-    char *ptr_chaine;
-
-
 
     FILE* fichier = NULL;
 
-    fichier = fopen("Battements.csv", "r+");
+    char chaine[TAILLE_MAX] = "";
+
+
+
+    fichier = fopen("Battements.csv", "r");
+
+
 
     if (fichier != NULL)
+
     {
-    read(fichier, &inhabs0, &n)
+
+        while (fgets(chaine, TAILLE_MAX, fichier) != NULL) // On lit le fichier tant qu'on ne reçoit pas d'erreur (NULL)
+
+        {
+
+            printf("%s", chaine); // On affiche la chaîne qu'on vient de lire
+
+        }
 
 
 
-    fclose(fichier);
+        fclose(fichier);
 
-
-
-
-        return 0;
     }
-    else
-    {
-        // On affiche un message d'erreur si on veut
-        printf("Impossible d'ouvrir le fichier test.txt");
+
+
+
     return 0;
+
 }
-    }
-
-
-
-
