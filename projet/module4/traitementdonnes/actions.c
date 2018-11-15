@@ -1,4 +1,5 @@
-
+#include <stdio.h>
+#include <stdlib.h>
 #include "donnees.h"
 void afficher(Valeurs *tableau)
 {
@@ -21,6 +22,8 @@ void afficher(Valeurs *tableau)
 
 
 }
+
+
 void trierCroissantPoul(Valeurs *tableau)
 {
 int tailletableau=TAILLE_MAX;
@@ -42,7 +45,7 @@ int tailletableau=TAILLE_MAX;
 
      }
 
-afficher(Valeurs *tableau)
+afficher(tableau);
 }
 
 

@@ -9,7 +9,10 @@
 int main()
 
 {
-    Valeurs *tableau=readDonne();
+    Valeurs *tableau=readDonne(&nombreLigne);
+
+
+
 
 
 

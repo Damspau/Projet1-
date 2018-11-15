@@ -14,11 +14,11 @@ typedef struct Lignes{
 
 } Lignes;
 
-int *u=0;
+int nombreLigne;
 
 Valeurs tableauAtrie[TAILLE_MAX];
 
-Valeurs *readDonne(void);
+Valeurs *readDonne(int *nombreLignes);
 
 
 #endif
