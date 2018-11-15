@@ -3,19 +3,13 @@
 #include "donnees.h"
 void afficher(Valeurs *tableau)
 {
-    int i=0;
+    int i;
+for (i=0;i<=nombreLigne,i++)
+{
+   printf("%f\n%f\n",tableau[i].coeur,tableau[i].temps);
+}
 
-    do
-    {
 
-
-        if (tableau[i].temps<0)
-        {
-            i=TAILLE_MAX+1;
-        }
-        printf("%f\n%f\n",tableau[i].coeur,tableau[i].temps);
-    i++;
-    }while (i<TAILLE_MAX);
 
 
 
