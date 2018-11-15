@@ -4,7 +4,7 @@
 void afficher(Valeurs *tableau)
 {
     int i;
-for (i=0;i<=nombreLigne,i++)
+for (i=0;i<nombreLigne/2;i++)
 {
    printf("%f\n%f\n",tableau[i].coeur,tableau[i].temps);
 }
@@ -20,20 +20,21 @@ for (i=0;i<=nombreLigne,i++)
 
 void trierCroissantPoul(Valeurs *tableau)
 {
-int tailletableau=TAILLE_MAX;
+int tailletableau=nombreLigne;
 
-     int valeurtemporaire, i, j;
+     float valeurtemporaire;
+     int i, j;
 
      for (i=0; i<tailletableau; i++)
      {
         for(j=i; j<tailletableau; j++)
         {
-            if(tableau[j].coeur<tableau[i].coeur)  /* si on inverse le signe d'inégalité
+            if(tableau[j].temps<tableau[i].temps)  /* si on inverse le signe d'inégalité
                                           on aura le trie décroissant */
             {
-                valeurtemporaire = tableau[i].coeur;
-                tableau[i].coeur = tableau[j].coeur;
-                tableau[j].coeur = valeurtemporaire;
+                valeurtemporaire = tableau[i].temps;
+                tableau[i].temps = tableau[j].temps;
+                tableau[j].temps = valeurtemporaire;
             }
         }
 
