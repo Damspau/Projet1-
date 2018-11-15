@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "donees.c"
+#include "donnees.c"
+#include "actions.h"
 
 
 
@@ -8,10 +9,13 @@
 int main()
 
 {
-    Valeurs *tableau=readDonne();;
-    int choix=menu();
+    Valeurs *tableau=readDonne(&nombreLigne);
 
-    //if choix=
+
+
+
+
+
 
 
     return 0;

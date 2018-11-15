@@ -2,15 +2,20 @@
 #define FONCTIONS_H_INCLUDED
 #include <stdio.h>
 #include <stdlib.h>
-#define TAILLE_MAX
+#include "donnees.h"
+#include "actions.c"
 
 
-typedef struct Lignes{
-    int ligne;
 
-} Lignes;
 
-void read(FILE *fichier,Lignes ligne);
+void afficher(Valeurs *tableau);
+void trierCroissantPoul(Valeurs *tableau);
+void trierCroissantTemps(Valeurs *tableau);
+void trierDecroissantPoul(Valeurs *tableau);
+void trierDecroissantTemps(Valeurs *tableau);
+void afficherMoyennePouls(Valeurs *tableau);
+void afficherLigne(Valeurs *tableau);
+void afficherMaxOuMin(Valeurs *tableau);
 
 
 #endif

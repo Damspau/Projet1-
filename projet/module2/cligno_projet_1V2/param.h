@@ -43,14 +43,14 @@ void simultaneCligno (void)
  /*implementation d'une boucle for qui gere l'allumage des LEDs en simultane*/
     for (i=0;i<9;i++)
   {
-    digitalWrite (tab[i],LOW ); // allume
+    digitalWrite (tab[i],LOW ); // eteint
   
   }
   delay(700);
    /*implementation d'une boucle for qui gere la mise hors tension des LEDs en simultane*/
   for (i=9;i>0;i--)
   {
-    digitalWrite (tab[i],HIGH); // eteint
+    digitalWrite (tab[i],HIGH); // allume
  }
  delay (300);
  }

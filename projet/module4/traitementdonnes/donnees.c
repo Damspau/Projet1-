@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "donnes.h"
-Valeurs *readDonne(void)
+#include "donnees.h"
+Valeurs *readDonne(int *nombreLignes)
 {
     FILE* fichier = NULL;
     float tableauValeurs[TAILLE_MAX];
@@ -50,11 +50,7 @@ Valeurs *readDonne(void)
 
 
         fclose(fichier);
-
+    *nombreLignes=u;
 
     return &tableauAtrie;
  }   }
-/* On la vide et on la met dans les valeurs*/
-
-
-/*Maintenant notre tableau a trie est pret.*/
