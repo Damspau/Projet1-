@@ -3,6 +3,7 @@
 #define TAILLE_MAX 1000
 
 
+
 typedef struct Valeurs{
     float coeur;
     float temps;
@@ -13,6 +14,7 @@ typedef struct Lignes{
 
 } Lignes;
 
+int *u=0;
 
 Valeurs tableauAtrie[TAILLE_MAX];
 

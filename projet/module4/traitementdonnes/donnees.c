@@ -1,10 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "donnes.h"
+#include "donnees.h"
 Valeurs *readDonne(void)
 {
     FILE* fichier = NULL;
     float tableauValeurs[TAILLE_MAX];
+    for (i=0;i<TAILLE_MAX;i++)
+    {
+        tableauAtrie[i].coeur=0;
+        tableauAtrie[i].coeur=0;
+
+    }
     Valeurs valeur;
     valeur.coeur=0;
     valeur.temps=0;
@@ -12,7 +18,7 @@ Valeurs *readDonne(void)
 
     int i =0;
     int o=0;
-    int u=0;
+
     fichier = fopen("Battements.csv", "r");
 
 
@@ -20,7 +26,7 @@ Valeurs *readDonne(void)
     if (fichier != NULL)
 
     {
-/* On remplie notre pile*/
+
         while (fscanf(fichier,"%f",&tableauValeurs[u])> 0) // On lit le fichier tant qu'on ne reçoit pas d'erreur (NULL)
 
         {
@@ -44,7 +50,8 @@ Valeurs *readDonne(void)
             }
 
             }
-
+        valeur.temps=;
+        tableauAtrie[i]=valeur;
 
 
 
