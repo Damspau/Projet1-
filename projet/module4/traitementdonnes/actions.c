@@ -42,5 +42,17 @@ int tailletableau=TAILLE_MAX;
 afficher(tableau);
 }
 
+void afficherMoyennePouls(Valeurs *tableau)
+{
+    float somme;
+    float moyennePouls;
+    for(i=0;i<nombreLigne;i++)
+    {
+        somme += tableau[nombreLigne];
+    }
+    moyennePouls = somme / nombreLigne;
+    printf("le poul moyen est de %f\n", moyennePouls);
+}
+
 
 
