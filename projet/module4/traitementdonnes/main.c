@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     valeur.coeur=tableauValeurs[i-1];
     tableauAtrie[i]=valeur;
     }
-/*Maintenant notre tableau a trie est pret./
+/*Maintenant notre tableau a trie est pret.*/
 
     return 0;
 
