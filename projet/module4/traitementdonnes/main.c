@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "donnees.c"
-#include "actions.h"
 #include "menu.h"
 
 
@@ -10,8 +9,9 @@
 int main()
 
 {
-    Valeurs *tableau=readDonne(&nombreLigne);
 
+    Valeurs *tableau=readDonne(&nombreLigne);
+    afficherMoyennePouls(tableau,&moyennePouls);
 
     menu(tableau);
 

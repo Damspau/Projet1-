@@ -14,6 +14,8 @@ typedef struct Lignes{
 
 } Lignes;
 
+float moyennePouls;
+
 int nombreLigne;
 
 Valeurs tableauAtrie[TAILLE_MAX];

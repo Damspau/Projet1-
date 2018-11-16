@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include "actions.h"
+#include "actions.c"
 #include "donnees.h"
 int menu(Valeurs *tableau)
 
 {
     int choix;
-    printf("quelle action ?");
+    float moyennePoul=moyennePouls*
+    printf("quelle action ?\n");
     printf("1/afficher les valeurs\n2/tri croissant du poul\n3/tri croissant du temps\n4/tri decroissant du poul\n5/tri decroissant du temps\n6/afficher la moyenne des pouls\n7/afficher le nombre de ligne\n8/afficher le minimum et le maximum\n");
     scanf("%d", &choix);
     switch(choix)
@@ -26,7 +28,7 @@ int menu(Valeurs *tableau)
         trierDecroissantTemps(tableau);
         break;
     case 6:
-        afficherMoyennePouls(tableau);
+        printf("le poul moyen ed :%f\n", moyennePoul);
         break;
     case 7:
         afficherLigne(tableau);

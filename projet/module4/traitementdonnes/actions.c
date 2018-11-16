@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "donnees.h"
+#include "actions.h"
+
 void afficher(Valeurs *tableau)
 {
     int i;
@@ -109,21 +111,22 @@ afficher(tableau);
 
 
 
-void afficherMoyennePouls(Valeurs *tableau)
-{
+void afficherMoyennePouls(Valeurs *tableau, float *moyennePouls)
 {
     int i;
+
     float somme;
-    float moyennePouls;
-    for(i=0;i<nombreLigne*2;i++)
+
+    for(i=0;i<nombreLigne;i++)
     {
-        somme += tableau[i].coeur;
+        somme = somme + tableau[i].coeur;
     }
-    moyennePouls = somme / nombreLigne;
-    printf("le poul moyen est de %f\n", moyennePouls);
-}
+    *moyennePouls = somme / nombreLigne;
+    printf("%f",moyennePouls);
 
 }
+
+
 
 
 void afficherLigne(Valeurs *tableau)
