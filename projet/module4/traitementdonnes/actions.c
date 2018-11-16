@@ -111,23 +111,24 @@ afficher(tableau);
 
 void afficherMoyennePouls(Valeurs *tableau)
 {
-    int i=0;
+{
+    int i;
     float somme;
-    float compteur=nombreLigne;
     float moyennePouls;
-    for(i=0;i<compteur;i++)
+    for(i=0;i<nombreLigne*2;i++)
     {
-        somme =(tableau[i].coeur)+somme;
+        somme += tableau[i].coeur;
     }
-    moyennePouls = somme /compteur;
+    moyennePouls = somme / nombreLigne;
     printf("le poul moyen est de %f\n", moyennePouls);
+}
 
 }
 
 
 void afficherLigne(Valeurs *tableau)
 {
-    printf("%d",nombreLigne);
+    printf("%d",nombreLigne*2);
 }
 
 void rechercheValeur(Valeurs *tableau)
