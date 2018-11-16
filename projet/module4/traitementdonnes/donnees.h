@@ -12,6 +12,8 @@ typedef struct Valeurs{
 
 int nombreLigne;
 
+float moyennePouls;
+
 Valeurs tableauAtrie[TAILLE_MAX];
 
 Valeurs *readDonne(int *nombreLignes);

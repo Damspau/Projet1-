@@ -13,7 +13,7 @@ void trierCroissantPoul(Valeurs *tableau);
 void trierCroissantTemps(Valeurs *tableau);
 void trierDecroissantPoul(Valeurs *tableau);
 void trierDecroissantTemps(Valeurs *tableau);
-void afficherMoyennePouls(Valeurs *tableau);
+void afficherMoyennePouls(Valeurs *tableau,float *moyennePouls);
 void afficherLigne(Valeurs *tableau);
 void rechercheValeur(Valeurs *tableau);
 
