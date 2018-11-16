@@ -4,7 +4,7 @@
 void afficher(Valeurs *tableau)
 {
     int i;
-for (i=0;i<nombreLigne/2;i++)
+for (i=0;i<nombreLigne;i++)
 {
    printf("%f\n%f\n",tableau[i].coeur,tableau[i].temps);
 }
@@ -17,7 +17,7 @@ void trierCroissantPoul(Valeurs *tableau)
 {
     Valeurs valeurtemporaire;
     int i, j;
-    int tailletableau=nombreLigne/2;
+    int tailletableau=nombreLigne;
 
      for (i=0; i<tailletableau; i++)
      {
@@ -41,7 +41,7 @@ void trierCroissantTemps(Valeurs *tableau)
 {
     Valeurs valeurtemporaire;
     int i, j;
-    int tailletableau=nombreLigne/2;
+    int tailletableau=nombreLigne;
 
      for (i=0; i<tailletableau; i++)
      {
@@ -64,7 +64,7 @@ void trierDecroissantPoul(Valeurs *tableau)
 {
     Valeurs valeurtemporaire;
     int i, j;
-    int tailletableau=nombreLigne/2;
+    int tailletableau=nombreLigne;
 
      for (i=0; i<tailletableau; i++)
      {
@@ -87,7 +87,7 @@ void trierDecroissantTemps(Valeurs *tableau)
 {
     Valeurs valeurtemporaire;
     int i, j;
-    int tailletableau=nombreLigne/2;
+    int tailletableau=nombreLigne;
 
      for (i=0; i<tailletableau; i++)
      {
@@ -116,7 +116,7 @@ void afficherMoyennePouls(Valeurs *tableau)
     float moyennePouls;
     for(i=0;i<nombreLigne;i++)
     {
-        somme += tableau[i].coeur;
+        somme =(tableau[i].coeur)+somme;
     }
     moyennePouls = somme / nombreLigne;
     printf("le poul moyen est de %f\n", moyennePouls);
@@ -131,20 +131,42 @@ void afficherLigne(Valeurs *tableau)
 
 void rechercheValeur(Valeurs *tableau)
 {
-    float valeur;
+    int valeur;
     int trouve=0;
-    printf("a quel temps ? ");
-    scanf("%f",&valeur);
+    printf("1 pour max ou 0 pour min ");
+    scanf("%d",&valeur);
     int i;
-for (i=0;i<nombreLigne/2;i++)
+    Valeurs solution;
+
+    if (valeur==1)
+    {
+    solution.coeur=0;
+
+
+
+    for (i=0;i<nombreLigne;i++)
 {
-    if (valeur==tableau[i].temps)
-        printf("%f",tableau[i].coeur);
-        trouve++;
-}
-if (trouve==0)
+    if (solution.coeur<=tableau[i].coeur)
+    {
+        solution=tableau[i];
+    }}}
+
+    else if (valeur==0)
+    {
+    solution.coeur=999;
+
+
+    for (i=0;i<nombreLigne;i++)
 {
- printf("pas trouve");
+    if (solution.coeur>=tableau[i].coeur)
+    {
+        solution=tableau[i];
+    }}}
+
+    printf("%f",solution.coeur);
+    printf("%f",solution.temps);
 }
 
-}
+
+
+

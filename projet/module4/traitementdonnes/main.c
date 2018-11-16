@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "donnees.c"
 #include "actions.h"
+#include "menu.h"
 
 
 
@@ -10,7 +11,9 @@ int main()
 
 {
     Valeurs *tableau=readDonne(&nombreLigne);
-    trierDecroissantTemps(tableau);
+
+
+    menu(tableau);
 
 
 

@@ -50,7 +50,7 @@ Valeurs *readDonne(int *nombreLignes)
 
 
         fclose(fichier);
-    *nombreLignes=u;
+    *nombreLignes=u/2;
 
     return tableauAtrie;
  }   }
