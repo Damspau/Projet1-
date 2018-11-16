@@ -14,6 +14,9 @@ int main()
     Valeurs *tableau=readDonne(&nombreLigne);
 
 
+
+
+
     /*Affichage du tableau*/
     menu(tableau);
 

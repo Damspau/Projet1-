@@ -113,19 +113,18 @@ afficher(tableau);
 
 
 
-void afficherMoyennePouls(Valeurs *tableau)
-{
+void afficherMoyennePouls(Valeurs *tableau, float *moyennePoul)
 {
     int i;
+
     float somme;
-    float moyennePouls;
-    for(i=0;i<nombreLigne*2;i++)
+
+    for(i=0;i<nombreLigne;i++)
     {
-        somme += tableau[i].coeur;
+        somme = somme + tableau[i].coeur;
     }
-    moyennePouls = somme / nombreLigne;
-    printf("le poul moyen est de %f\n", moyennePouls);
-}
+    *moyennePoul = somme / nombreLigne;
+    //on met la valeurs dans un pointeur car il y avait des problèmes avec les adresses.
 
 }
 

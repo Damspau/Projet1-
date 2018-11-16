@@ -26,7 +26,8 @@ int menu(Valeurs *tableau)
         trierDecroissantTemps(tableau);
         break;
     case 6:
-        afficherMoyennePouls(tableau);
+        afficherMoyennePouls(tableau,&moyennePouls);
+        printf("%f",moyennePouls);
         break;
     case 7:
         afficherLigne(tableau);
