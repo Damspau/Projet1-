@@ -54,11 +54,6 @@ void affichageMenu (void)
                 gUnSurAutreChenille();
                 fichierG = 1;
             }
-            if (choixMenu == 6)
-            {
-                
-                return ;
-            }
         }
     }
     if (fichierG == 0)
