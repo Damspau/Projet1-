@@ -20,21 +20,20 @@ for (i=0;i<nombreLigne/2;i++)
 
 void trierCroissantPoul(Valeurs *tableau)
 {
-int tailletableau=nombreLigne;
-
-     float valeurtemporaire;
-     int i, j;
+    Valeurs valeurtemporaire;
+    int i, j;
+    int tailletableau=nombreLigne;
 
      for (i=0; i<tailletableau; i++)
      {
         for(j=i; j<tailletableau; j++)
         {
-            if(tableau[j].temps<tableau[i].temps)  /* si on inverse le signe d'inégalité
+            if(tableau[j].coeur<tableau[i].coeur)  /* si on inverse le signe d'inégalité
                                           on aura le trie décroissant */
             {
-                valeurtemporaire = tableau[i].temps;
-                tableau[i].temps = tableau[j].temps;
-                tableau[j].temps = valeurtemporaire;
+                valeurtemporaire = tableau[i];
+                tableau[i] = tableau[j];
+                tableau[j] = valeurtemporaire;
             }
         }
 
@@ -44,4 +43,16 @@ afficher(tableau);
 }
 
 
+void afficherMoyennePouls(Valeurs *tableau)
+{
+    int i=0;
+    float somme;
+    float moyennePouls;
+    for(i=0;i<nombreLigne;i++)
+    {
+        somme += tableau[i].coeur;
+    }
+    moyennePouls = somme / nombreLigne;
+    printf("le poul moyen est de %f\n", moyennePouls);
 
+}
