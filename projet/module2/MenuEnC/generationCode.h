@@ -1,6 +1,6 @@
 #ifndef GENERATIONCODE_H_INCLUDED
 #define GENERATIONCODE_H_INCLUDED
-#include "menu.h"
+#include "generationCode.c"
 
 void gPreprocesseur(void);
 

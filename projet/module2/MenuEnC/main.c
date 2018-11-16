@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <arduino.h>
-int main()
+#include "menu.h"
 
-    printf("Hello world!\n");
-    return 0;
+int main ()
+{
+    affichageMenu();
+	return 0;
 }
+
+
+
