@@ -15,7 +15,6 @@ void trierDecroissantPoul(Valeurs *tableau);
 void trierDecroissantTemps(Valeurs *tableau);
 void afficherMoyennePouls(Valeurs *tableau);
 void afficherLigne(Valeurs *tableau);
-void afficherMaxOuMin(Valeurs *tableau);
-
+void rechercheValeur(Valeurs *tableau);
 
 #endif
