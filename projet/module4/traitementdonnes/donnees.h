@@ -2,17 +2,13 @@
 #define DONNES_H_INCLUDED
 #define TAILLE_MAX 1000
 
-
+/*On définie les différents éléments pour traiter les données*/
 
 typedef struct Valeurs{
     float coeur;
     float temps;
 }   Valeurs;
 
-typedef struct Lignes{
-    int ligne;
-
-} Lignes;
 
 int nombreLigne;
 

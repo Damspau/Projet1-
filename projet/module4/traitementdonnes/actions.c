@@ -26,6 +26,7 @@ void trierCroissantPoul(Valeurs *tableau)
             if(tableau[j].coeur<tableau[i].coeur)  /* si on inverse le signe d'inégalité
                                           on aura le trie décroissant */
             {
+                /*On échange les valeurs*/
                 valeurtemporaire = tableau[i];
                 tableau[i] = tableau[j];
                 tableau[j] = valeurtemporaire;
@@ -50,6 +51,7 @@ void trierCroissantTemps(Valeurs *tableau)
             if(tableau[j].temps<tableau[i].temps)  /* si on inverse le signe d'inégalité
                                           on aura le trie décroissant */
             {
+                /*On échange les valeurs*/
                 valeurtemporaire = tableau[i];
                 tableau[i] = tableau[j];
                 tableau[j] = valeurtemporaire;
@@ -73,6 +75,7 @@ void trierDecroissantPoul(Valeurs *tableau)
             if(tableau[j].coeur>tableau[i].coeur)
 
             {
+                /*On échange les valeurs*/
                 valeurtemporaire = tableau[i];
                 tableau[i] = tableau[j];
                 tableau[j] = valeurtemporaire;
@@ -96,6 +99,7 @@ void trierDecroissantTemps(Valeurs *tableau)
             if(tableau[j].temps>tableau[i].temps)  /* si on inverse le signe d'inégalité
                                           on aura le trie décroissant */
             {
+                /*On échange les valeurs*/
                 valeurtemporaire = tableau[i];
                 tableau[i] = tableau[j];
                 tableau[j] = valeurtemporaire;
@@ -133,6 +137,7 @@ void afficherLigne(Valeurs *tableau)
 
 void rechercheValeur(Valeurs *tableau)
 {
+    /* Tri séquentiel, on demande si il veut valeur max ou min */
     int valeur;
     int trouve=0;
     printf("1 pour max ou 0 pour min ");
